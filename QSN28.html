@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Swap Images</title>
+    <script>
+        function swapImage() {
+            document.getElementById("img1").src = "image2.jpg";
+        }
+
+        function restoreImage() {
+            document.getElementById("img1").src = "bgimage.jpg";
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Image Swap Example</h2>
+    <img id="img1" src="bgimage.jpg" width="200" onmouseover="swapImage()" onmouseout="restoreImage()">
+</body>
+
+</html>

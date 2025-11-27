@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Min and Max</title>
+    <script>
+        function findMinMax() {
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+            var c = parseInt(document.getElementById("num3").value);
+
+            var min = Math.min(a, b, c);
+            var max = Math.max(a, b, c);
+
+            document.getElementById("result").innerHTML =
+                "<b>MINIMUM = " + min + ", MAXIMUM = " + max + "</b>";
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Find Min and Max</h2>
+    <form>
+        Number 1: <input type="text" id="num1"><br><br> Number 2: <input type="text" id="num2"><br><br> Number 3: <input type="text" id="num3"><br><br>
+        <input type="button" value="Find" onclick="findMinMax()">
+    </form>
+    <p id="result"></p>
+</body>
+
+</html>

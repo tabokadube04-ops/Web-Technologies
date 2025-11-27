@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Sort Array</title>
+    <script>
+        function sortArray() {
+            var arr = [34, 12, 5, 67, 89, 1];
+            arr.sort(function(a, b) {
+                return a - b;
+            });
+            document.getElementById("result").innerHTML = "Sorted Array: " + arr;
+        }
+    </script>
+</head>
+
+<body onload="sortArray()">
+    <h2>Array Sorting Example</h2>
+    <p id="result"></p>
+</body>
+
+</html>
